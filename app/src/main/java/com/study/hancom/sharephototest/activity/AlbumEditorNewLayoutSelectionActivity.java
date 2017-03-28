@@ -22,14 +22,9 @@ public class AlbumEditorNewLayoutSelectionActivity extends AppCompatActivity imp
         setContentView(R.layout.album_editor_page_new_layout_main);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
-//        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-//                R.array.planets_array, android.R.layout.simple_spinner_item);
-//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
         GridView gridView = (GridView)findViewById(R.id.page_layout_grid_view);
-//        gridView.setAdapter();
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
